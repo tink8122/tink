@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>梅兰竹菊四君子</title>
+     <style>
+        /* 基础样式 */
+        :root {
+            --ink: #261508;   /* 墨色 */
+            --paper: #F3EEE6; /* 宣纸色 */
+            --red: #B23A2E;    /* 朱砂红 */
+            --gold: #C49D6C;   /* 金秋色 */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Ma Shan Zheng', cursive;
+        }
+
+        body {
+            background: var(--paper);
+            line-height: 1.8;
+        }
+
+        /* 导航样式 */
+        nav {
+            background: var(--ink);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* 页面容器 */
+        .page {
+            padding: 6rem 2rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 首页样式 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .grid-item {
+            position: relative;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .grid-item h2 {
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            color: white;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* 子页面通用样式 */
+        .section-title {
+    font-size: 3rem;
+    color: var(--ink);
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--red);
+    padding-left: 1rem;
+    font-family: "华文行楷";
+        }
+
+        .content-box {
+    background: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    font-family: "微软雅黑";
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-item {
+                height: 300px;
+            }
+
+            nav a {
+                margin: 0 0.8rem;
+                font-size: 1rem;
+            }
+        }
+     </style>
+</head>
+<body>
+    <!-- 导航 -->
+    <nav>
+		<a href="#home"><strong style="font-family: '华文新魏'; font-size: 22px;">首页</strong></a>
+        <a href="#mei"><strong style="font-family: '华文新魏'; font-size: 22px;">梅之页</strong></a>
+        <a href="#lan"><strong style="font-family: '华文新魏'; font-size: 22px;">兰之页</strong></a>
+        <a href="#zhu"><strong style="font-family: '华文新魏'; font-size: 22px;">竹之页</strong></a>
+        <a href="#ju"><strong style="font-family: '华文新魏'; font-size: 22px;">菊之页</strong></a>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home" class="page">
+        <div class="grid-container">
+            <div class="grid-item" style="background-image: url('image/梅1.jpg')">
+                <h2>凌霜傲雪</h2></div>
+            <div class="grid-item" style="background-image: url('image/兰1.jpg')">
+              <h2>幽芳自赏</h2></div>
+            <div class="grid-item" style="background-image: url('image/竹1.jpg')">
+                <h2>虚怀劲节</h2></div>
+            <div class="grid-item" style="background-image: url('image/菊1.jpg')">
+                <h2>晚香冷艳</h2></div>
+        </div>
+    </section>
+
+    <!-- 梅 -->
+    <section id="mei" class="page">
+        <h2 class="section-title">梅之页</h2>
+        <div class="content-box">
+            <h3 style="font-family: '华文新魏'; font-size: 22px;">文化象征</h3>
+            <p>铁骨冰心</p>
+            <p>梅花傲雪争春、不染世坐。梅花迎寒而开，傲霜斗雪，象征坚韧不拔、自强不息，具有坚韧不拔、谦虚、无畏和傲骨的品质，象征着希望、象征着拼搏、象征着高洁。 作为岁寒三友之一，梅花可以在寒冬中盛开，无论风雪多大，都能毅然绽放，体现了它坚韧不拔的品质。 梅花不与百花争芳斗妍，而选择开在寒冬，开在没有人关注的时节，这种主动避让就是一种谦虚。 冬天的寒冷让很多植物生长都成了难事，而梅花却能不惧风雪，面对恶劣的天气和低温都能开花，由此可见其无畏精神。</p>
+            <p>&nbsp;</p>
+          <h3 style="font-family: '华文新魏'; font-size: 22px;">植物科普</h3>
+          <p style="font-family: '微软雅黑'">生长周期：</p>
+          <table width="800" border="1">
+            <tbody>
+              <tr>
+                <th bgcolor="#F2ECEC" style="color: #000000" scope="col">春季</th>
+                <th bgcolor="#F2ECEC" style="color: #000000" scope="col">夏季</th>
+                <th bgcolor="#F2ECEC" style="color: #000000" scope="col">秋季</th>
+                <th bgcolor="#F2ECEC" style="color: #000000" scope="col">冬季</th>
+              </tr>
+              <tr>
+                <td bgcolor="#FFFFFF" style="text-align: center">梅花开放花朵</td>
+                <td bgcolor="#FFFFFF" style="text-align: center">初夏时结果实，然后进入休眠期</td>
+                <td bgcolor="#FFFFFF" style="text-align: center">进入旺盛生长的时期</td>
+                <td bgcolor="#FFFFFF" style="text-align: center">恢复生长结出花蕾</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-family: '微软雅黑'">梅花品种分类：</p>
+          <p>按枝条及生长姿态分：叶梅、直角梅、照水梅等类。</p>
+          <p>按花色及花型分：宫粉梅、红梅、照水梅、绿萼梅、大红梅、玉蝶梅、洒金梅等型。</p>
+          <p>&nbsp;</p>
+          <h3 style="font-family: '华文新魏'; font-size: 22px;">艺术欣赏</h3>
+          <p style="font-family: '微软雅黑'">诗词</p>
+          <p>梅花</p>
+          <p>王安石〔宋代〕</p>
+          <p>墙角数枝梅，凌寒独自开。</p>
+          <p>遥知不是雪，为有暗香来。</p>
+          <p style="font-family: '微软雅黑'">名画</p>
+            <img src="image/梅名画2.jpg" alt="梅花名画2" style="width:35%; margin-top:1rem"><img src="image/梅名画4.jpg" alt="梅花名画4" style="width:35%; margin-top:1rem">
+			<img src="image/梅名画1.jpg" alt="梅花名画1" style="width:35%; margin-top:1rem">
+			<img src="image/梅名画3.jpg" alt="梅花名画3" style="width:35%; margin-top:1rem">
+        </div>
+    </section>
+
+    <!-- 兰 -->
+    <section id="lan" class="page">
+        <h2 class="section-title">兰之页</h2>
+        <div class="content-box">
+            <h3 style="font-family: '华文新魏'; font-size: 22px;">文化象征</h3>
+            <p>空谷幽香</p>
+            <p>兰花馨雅性灵、超凡脱俗，清雅幽香，生于幽谷，代表高洁典雅的君子之风。</p>
+            <p>1. 兰有自强不息，厚德载物的精神品质。</p>
+            <p>兰花在艰难困苦的自然环境中，面临无数风霜、雨雪、烈日酷暑的侵袭均不畏强暴，自强不息，生生不灭；同时兰花又具有不侵害、伤害、侵扰余类生存的博大胸怀、和睦共处、相容并存。</p>
+            <p>2. 兰德崇高，坚贞不屈，丛生固本，团结奋进。</p>
+            <p>兰德是兰花在其植物属性之外被人格化的精神意识拟人化升华。从古至今普遍存在于大自然中的花草植物无以计数，古代先贤对兰花情有独钟并择其为“君子”典型代表...</p>
+            <p>&nbsp;</p>
+            <h3 style="font-family: '华文新魏'; font-size: 22px;">植物科普</h3>
+            <p style="font-family: '微软雅黑'">观赏价值</p>
+            <p>兰花具有美妙的花姿、丰富的色彩、清幽的香味和优雅的姿态，原生于深山幽谷之中，我国称之为花中君子、天香。兰花的形态素雅，花香袭人，是名贵花卉之一，深得人民喜爱，无论是单株或是成片种植，都具有极高的观赏价值。 </p>
+            <p style="font-family: '微软雅黑'">药用价值</p>
+            <p>兰花种类很多，如天麻、三棱虾瘠兰、绿花勺兰、黑节草、石斛等大部分品种的兰花，都是上好的中草药，具有极大的药用价值。现代社会中，竹叶兰全草均可入药，具有清热解毒，祛风湿和消炎利尿之功效；白及，用其假鳞茎入药，能消肿、止血、补肺，生肌止痛，润肋行力；流苏虾脊兰，能清热解毒，强筋壮骨；独蒜兰可治疗肝脏疾病等。 </p>
+            <p style="font-family: '微软雅黑'">食用价值</p>
+            <p>兰花既可用来制作花酒，也可以腌制、凉拌及制作花茶等。印度喜马拉雅山山麓盛产野生的喜姆比兰，当地土著把幼嫩的假球茎加以切块，调理成美味的佳肴。日本京都也有人将春兰晒干淹渍成“兰花茶”装罐出售，其香气风味独特。在其它地方，还有利用兰花制作的面条、饮料等食品。 </p>
+            <p><strong>香用价值</strong></p>
+            <p>用兰花制成香味料，如“梵尼拉香精”，它是饼干，冰淇淋最高级的天然香料。梵尼拉香精是利用原产在墨西哥的梵尼拉兰果实经发酵后制成，中国也有大量栽培。 </p>
+          <p>&nbsp;</p>
+            <h3 style="font-family: '华文新魏'; font-size: 22px;">艺术欣赏</h3>
+          <p style="font-family: '微软雅黑'">诗词</p>
+            <p>《幽兰·眇眇蛸挂网》</p>
+            <p>鲍照〔南北朝〕</p>
+            <p>眇眇蛸挂网，漠漠蚕弄丝。</p>
+            <p>空惭不自信，怯与君画期。</p>
+          <p style="font-family: '微软雅黑'">典故</p>
+            <p>孔子“芝兰生幽谷”典故</p>
+            <p>《孔子家语·在厄》“且芝兰生于深林，不以无人而不芳，君子修道立德，不谓穷困而改节。” </p>
+		    <p>意思是： 况且芝兰生长在深林之中，不因为无人欣赏而不芳香；君子修养身心培养道德，不因为穷困而改变节操。</p>
+		    <p style="font-family: '微软雅黑'">名画</p>
+		    <img src="image/兰名画2.jpg" width="300" height="593" alt=""/>
+            <img src="image/兰名画1.jpg" width="500" height="318"/>
+      </div>
+    </section>
+
+    <!-- 竹 -->
+    <section id="zhu" class="page">
+        <h2 class="section-title">竹之页</h2>
+        <div class="content-box">
+            <h3 style="font-family: '华文新魏'; font-size: 22px;">文化象征</h3>
+          <p>劲节虚心</p>
+            <p>竹中正刚健、独守气节，有节而中空，象征刚正不阿、虚怀若谷的品格。</p>
+            <p>竹子心无杂念，甘于孤寂，在荒山野岭中默默生长，无论是峰峰岭岭，还是沟沟壑壑，它都能以坚韧不拔的毅力在逆境中顽强生存，始终“咬定青山”、专心致志、无怨无悔。千百年来，人们都会赋予竹子清峻不阿、高风亮节的品格形象。</p>
+            <p>竹轻盈细巧、四季常青,尽管有百般柔情，但从不哗众取宠，更不盛气凌人，虚心劲节，朴实无华才是它的品格。翠竹挺拔劲节，既有梅花凌霜傲雪的铁骨，又有兰花翠色长存的高洁，并以它那劲节、虚空、萧疏的个性。“劲节有高致，清声无俗喧。”它的“劲节”，代表不屈的气节；它的“虚空”，代表谦逊的胸怀。</p>
+            <p>&nbsp;</p>
+            <h3 style="font-family: '华文新魏'; font-size: 22px;">植物科普</h3>
+            <p style="font-family: '微软雅黑'">竹子的观赏价值</p>
+            <p>我国竹文化源远流长，竹子颇受文人雅客的喜爱，一般会在书房前的庭院中种植以表现个人品性，竹子外形独特，竹秆色彩青翠，竹叶形态多变，观赏性极佳。 </p>
+            <p style="font-family: '微软雅黑'">竹子的药用价值</p>
+            <p>竹叶：《本草纲目》中记载：&ldquo;淡竹叶气味辛平，苦竹叶气味苦冷&rdquo;，可治心烦、口疮等病症，夏秋两季采集药用竹叶，晾干后可做一味中药，竹叶粥可以治疗目疼、上火等症状。竹叶对心脑血管疾病也能起到一定的防治作用。 </p>
+            <p>竹笋：竹笋性味甘寒，有清热解毒、和中润肠的功效，还可以去胀气；医学研究发现，竹笋对糖尿病有一定的改善作用，还可以消除面部黄褐斑。 </p>
+            <p style="font-family: '微软雅黑'">竹子的食用价值</p>
+            <p>竹笋富含胡萝卜素、维生素、氨基酸以及多种微量元素；竹笋纤维素含量比较高，可以减少人体对脂肪的吸收，增加肠蠕动，促进食物消化吸收，可以有效地减少高血压和高血脂的发病率。 </p>
+            <p style="font-family: '微软雅黑'">竹子的建筑价值</p>
+            <p>竹子强度高、韧性好、耐磨性佳，防潮性能好，不易生虫和变形，可以当做建筑材料来建设房屋，我国傣族的传统建筑为竹楼，竹楼防潮减震，还有冬暖夏凉的效用；竹子作为一种原生自然材料，现在还可用作一种天然无污染的室内装饰品和竹地板。 </p>
+            <p style="font-family: '微软雅黑'">竹子的工艺价值</p>
+            <p>竹子韧性佳，竹纤维较多，可以用来制作纸张，竹纸是我国非物质文化遗产；竹子可用来编织竹筐，打造全竹家具，制作竹萧、笔筒、花瓶、伞骨等工艺品。 </p>
+          <p>&nbsp;</p>
+            <h3 style="font-family: '华文新魏'; font-size: 22px;">艺术欣赏</h3>
+            <p style="font-family: '微软雅黑'">诗词</p>
+		  <p>竹石</p>
+            <p>郑燮〔清代〕</a></p>
+            <p>咬定青山不放松，立根原在破岩中。</p>
+            <p>千磨万击还坚劲，任尔东西南北风。</p>
+          <p style="font-family: '微软雅黑'">名画</p>
+	        <img src="image/竹名画1.jpg" width="280" height="534" alt=""/>
+	    	<img src="image/竹名画2.jpg" width="280" height="521" alt=""/>
+			<img src="image/竹名画3.jpg" width="300" height="539" alt=""/>
+			<img src="image/竹名画4.jpg" width="280" height="509" alt=""/>
+			<img src="image/竹名画5.jpg" width="280" height="537" alt=""/>
+			<img src="image/竹名画6.jpg" width="300" height="572" alt=""/>
+		</div>
+    </section>
+
+    <!-- 菊 -->
+    <section id="ju" class="page">
+        <h2 class="section-title">菊之页</h2>
+        <div class="content-box">
+            <h3 style="font-family: '华文新魏'; font-size: 22px;">文化象征</h3>
+            <p>傲霜晚香</p>
+            <p>菊花秋日盛放，经霜不凋，体现超凡脱俗的隐士风范。</p>
+            <p>菊花凌霜不凋、气韵高洁。菊有高雅脱俗、隐逸退让的君子品节，菊诗反映出一种积极进取、自强不息的尚健精神。 菊花有独特的观赏价值，人们欣赏它那千姿百态的花朵、姹紫嫣红的色彩和清幽高雅的香气，尤其在百花纷纷枯萎的秋冬季节，菊花傲霜怒放，其不畏寒霜欺凌的气节，也正是中华民族不屈不挠精神的体现。</p>
+            <p>&nbsp;</p>
+          <h3 style="font-family: '华文新魏'; font-size: 22px;">植物科普 </h3>
+            <p style="font-family: '微软雅黑'">菊花的分类</p>
+            <p>通过对菊花的大小、花型、花色、开花时间等特点的分类，可以将菊花分为大菊、小菊、菊兰和野菊等多个品种。 </p>
+            <p>大菊是指花径大于10厘米的菊花，通常用于园林景观和盆栽。它们外观庄重华贵，花型复杂多样，色彩鲜艳艳丽。 </p>
+            <p>小菊是指花径小于10厘米的菊花，它们更适合用来做切花和插花，许多品种还可盆栽。小菊通常外观清秀娇艳，花型简单、色彩柔和。 </p>
+            <p>菊兰也称为重瓣菊，是大菊中的一种，其花型呈球形，叶片厚实光滑，色彩丰富绚烂。由于其外观雍容华贵，常用于重要场合和园林景观。 </p>
+            <p>野菊是指天然生长在草地和山区中的菊花，外观清新自然，色彩柔和淡雅。在中国的传统文化中，野菊被视为高洁、清雅之物。 </p>
+            <p style="font-family: '微软雅黑'">菊花的颜色</p>
+            <p>除了常见的白色、黄色、红色、紫色、粉色等基本颜色外，还有蓝色、绿色、黑色等不常见的颜色，每种颜色都有其独特的魅力。 </p>
+          <p style="font-family: '微软雅黑'">菊花的形态</p>
+            <p>不同品种的菊花形态各异，有的呈球形、锥形或牵牛花状，有的呈星形或爆米花状。菊花的形态多样性使得其在园林景观和插花中有着广泛的应用价值。 </p>
+            <p style="font-family: '微软雅黑'">菊花的特性</p>
+            <p>菊花是一种高等植物，具有吸收二氧化碳、放出氧气的作用，可以净化空气。同时，菊花还具有清热解毒、活血化瘀、增强人体免疫力等特性，具有一定的药用价值。 </p>
+<p>&nbsp;</p>
+            <h3 style="font-family: '华文新魏'; font-size: 22px;">艺术欣赏</h3>
+          <p style="font-family: '微软雅黑'">诗词</p>
+            <p>《菊花》</p>
+            <p>元稹〔唐〕</p>
+            <p>秋丛绕舍似陶家，遍绕篱边日渐斜。</p>
+            <p>不是花中偏爱菊，此花开尽更无花。</p>
+            <p style="font-family: '微软雅黑'">名画</p>
+			<img src="image/菊名画1.jpg" width="400" height="1024" alt=""/>
+			<img src="image/菊名画2.jpg" width="400" height="812" alt=""/>
+			<img src="image/菊名画4.jpg" width="400" height="1618" alt=""/>
+			<img src="image/菊名画3.jpg" width="400" height="1294" alt=""/>
+        </div>
+    </section>
+
+</body>
+</html>
+<body>
+</body>
+</html>
